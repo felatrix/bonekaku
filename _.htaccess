@@ -1,0 +1,4 @@
+RewriteEngine on 
+RewriteRule ^$ /workshop/index.php [L] 
+RewriteCond $1 !^(index\.php|resource|system|user_guide|bootstrap|robots\.txt|favicon\.ico) 
+RewriteRule ^(.*)$ /workshop/index.php/$1 [L]
